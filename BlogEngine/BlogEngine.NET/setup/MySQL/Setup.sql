@@ -65,8 +65,8 @@ CREATE TABLE `be_Posts` (
   `Title` varchar(255) NOT NULL DEFAULT '',
   `Description` text NOT NULL,
   `PostContent` longtext NOT NULL,
-  `DateCreated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `DateModified` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `DateCreated` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `DateModified` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `Author` varchar(50) NOT NULL DEFAULT '',
   `IsPublished` tinyint(1) NOT NULL DEFAULT '0',
   `IsCommentEnabled` tinyint(1) NOT NULL DEFAULT '0',
@@ -113,7 +113,7 @@ CREATE TABLE `be_Users` (
   `BlogID` varchar(36) NOT NULL DEFAULT '',
   `UserName` varchar(100) DEFAULT NULL,
   `Password` varchar(255) DEFAULT NULL,
-  `LastLoginTime` datetime DEFAULT '0000-00-00 00:00:00',
+  `LastLoginTime` datetime DEFAULT CURRENT_TIMESTAMP,
   `EmailAddress` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`UserID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
@@ -140,7 +140,7 @@ CREATE TABLE `be_PostComment` (
   `PostCommentID` varchar(36) NOT NULL DEFAULT '',
   `PostID` varchar(36) NOT NULL DEFAULT '',
   `ParentCommentID` varchar(36) NOT NULL DEFAULT '00000000-0000-0000-0000-000000000000',
-  `CommentDate` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `CommentDate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `Author` varchar(255) NOT NULL DEFAULT '',
   `Email` varchar(255) NOT NULL DEFAULT '',
   `Website` varchar(255) NOT NULL DEFAULT '',
