@@ -18,6 +18,8 @@ Test image:
 
 ## Get Started
 
+Updates are here
+
 1. Requirements
    You need a Windows Hosting that supports ASP.NET 4.5 and above.
 
