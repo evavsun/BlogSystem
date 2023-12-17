@@ -2,7 +2,11 @@
 <p>
     <strong>BlogEngine</strong> is an open source blogging platform since 2007.<br>Easily customizable. Many free built-in Themes, Widgets, and Plugins.
 </p>
-<br>
+<be>
+
+Test image:
+![image](https://github.com/evavsun/BlogSystem/assets/26879801/f98c8de2-0d90-4164-9144-2e79b907503d)
+
 
 - **[Website](https://blogengine.io/)**
 - **[Docs](https://blogengine.io/support/get-started/)**
