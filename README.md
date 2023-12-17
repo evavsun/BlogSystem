@@ -1,6 +1,3 @@
-![image](https://github.com/evavsun/BlogSystem/assets/26879801/a53a1730-7cf7-4a4a-aee8-766d2cc7e53d)
-
-
 <br>
 <p>
     <strong>BlogEngine</strong> is an open source blogging platform since 2007.<br>Easily customizable. Many free built-in Themes, Widgets, and Plugins.
